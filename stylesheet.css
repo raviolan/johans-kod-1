@@ -100,7 +100,7 @@ display: block;
     
   .imagecontainer {
     display: flex;
-    justify-items:center;
+    justify-content:center;
     align-items:center;
     height: 350px;
     width: auto;
@@ -119,14 +119,15 @@ display: block;
 
   .container3 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items:center;
     gap: 20px;
     padding: 50px 25px;
-    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
     width: 100%;
   }
-
 
   .container3 h4 {
     margin-top: 20px;
@@ -141,6 +142,7 @@ display: block;
   font-size: 12pt;
   margin-top: 5px;
   line-height: 1.6;
+
 }
   .knappar
   {
