@@ -1,29 +1,28 @@
-<<<<<<< HEAD
-body {}
-
-=======
-body{
-
-}
->>>>>>> origin/main
 .toppen {
-  position: relative;
+  background-image: url("abilder/Wallpaper.jpg");
+  border: 2px solid black;
   height: 500px;
-  width: auto;
-  background-image: url('bilder/IMG_1327.jpg');
+  width: 100%;
   background-size: cover;
-  margin-top: -50px;
+  background-repeat: no-repeat;
+  background-position: center 40%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
-<<<<<<< HEAD
-h1 {
-  color: white;
-  font-size: 65pt;
-  font-family: arial;
+
+.toppen h1 {
   text-align: center;
+  margin-bottom: 70px;
+  /*Här kan ju justera marginalen för att flytta texten upp och ner*/
+}
+
+h1 {
+  color: black;
+  font-size: 40pt;
+  font-family: arial;
+
 }
 
 h3 {
@@ -31,10 +30,24 @@ h3 {
   font-size: 25pt;
   font-family: arial;
   text-align: center;
+  margin-top: 75px;
 }
 
-.ingress {
+h4 {
+  color: black;
   font-size: 20px;
+  font-family: arial;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: 0%;
+  margin-bottom: 0;
+
+}
+
+
+
+.ingress {
   justify-items: center;
   justify-self: center;
   color: DarkSlateGray;
@@ -42,13 +55,12 @@ h3 {
 }
 
 .ingress-text {
-  font-size: 18pt;
+  font-size: 16pt;
   text-align: center;
   width: 75%;
   margin-bottom: 40px;
 }
 
-/*--------------------*/
 .nesting-container {
   display: flex;
   flex-direction: column;
@@ -56,24 +68,23 @@ h3 {
   align-items: center;
 }
 
+
 .text-image-container {
   display: flex;
-  /*Bytt från grid till flex för enklare centrering*/
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /*Behåll lite avstånd mellan bilderna*/
   padding: 50px 25px;
   position: relative;
   width: 100%;
 }
 
+
+
 .image-with-caption,
 .text-block {
   flex: 1;
-  /* båda elementen ska ta upp lika mycket yta...*/
   max-width: 500px;
-  /* ...men aldrig bli större än så här */
 }
 
 .image-with-caption img {
@@ -82,11 +93,13 @@ h3 {
 }
 
 .caption {
-  font-size: 14px;
-  color: black;
+  font-size: 12pt;
   text-align: left;
+  color: black;
   margin-top: 8px;
 }
+
+
 
 .text-block {
   text-align: left;
@@ -94,96 +107,13 @@ h3 {
 }
 
 .text-block p {
-  font-size: 17px;
+  font-size: 12pt;
   margin-top: 5px;
   line-height: 1.6;
-
 }
 
-/*Sparat tidigare originalkod*/
-/* .text-image-container {
-=======
-h1 { 
-    color: white;
-    font-size: 65pt;
-    font-family: arial;
-    text-align: center;
-  } 
-  
-  h3 {
-    color:black;
-    font-size: 25pt;
-    font-family: arial;
-    text-align: center;
-  }
-
-  .ingress {
-    font-size: 20px;
-    justify-items: center;
-    justify-self: center;
-    color: DarkSlateGray;
-    width: 89%;
-  }
-
-  .ingress-text {
-    font-size: 18pt;
-    text-align: center;
-    width: 75%;
-    margin-bottom: 40px;
-  }
-  
-  .text-image-container {
->>>>>>> origin/main
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 20px;
-    align-items: start;
-    padding-bottom: 20px;
-    padding-top: 50px;
-    margin-left: 25px;
-    scroll-margin-right: 25px;
-  }
-  
-  
-.image-with-caption {
-  width: 100%;
-  max-width: 500px;
-  justify-self: left;
 
 
-}
-h4 {
-  color:black;
-  font-size: 20px;
-  font-family: arial;
-  text-align: left;
-  align-self: flex-start;
-  justify-self: flex-start;
-  margin-top: 0%;
-  margin-bottom: 0;
-  
-}
-  .text-block {
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-  }   
-   
-  p {
-    font-size: 17px;
-    margin-top: 5px;
-
-  }
-  .image-with-caption img {
-width: 100%;
-  }
-
-  .caption {
-    font-size: 14px;
-    justify-self: left;
-    color: black;
-  }
-<<<<<<< HEAD
-*/
 .imagecontainer {
   display: flex;
   justify-content: center;
@@ -191,10 +121,9 @@ width: 100%;
   height: 350px;
   width: auto;
   overflow: hidden;
-  margin-left: 25px;
-  margin-right: 25px;
 
 }
+
 
 .imagecontainer img {
   object-fit: cover;
@@ -204,37 +133,18 @@ width: 100%;
 }
 
 .container3 {
-=======
-
-  .imagecontainer {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 350px;
-    width: auto;
-    overflow: hidden;
-    margin-left: 25px;
-    margin-right: 25px; 
-    
-  }
-
-  .imagecontainer img {
-    object-fit: cover;
-    position: relative;
-    top: 50px;
-
-   } 
-  .container3 {
->>>>>>> origin/main
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  padding: 50px 25px;
   margin-left: 25px;
-  scroll-margin-right: 25px;
-  font-family: arial;
-  padding-bottom: 50px;
-<<<<<<< HEAD
+  margin-right: 25px;
+  width: auto;
 }
+
+
 
 .container3 h4 {
   margin-top: 20px;
@@ -242,6 +152,14 @@ width: 100%;
 
 .text-block2 {
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-block2 p {
+  font-size: 12pt;
+  margin-top: 5px;
+  line-height: 1.6;
+
 }
 
 .knappar {
@@ -268,39 +186,41 @@ a {
 a:hover {
   background: darkblue;
 }
-=======
-  }
 
-  .container3 h4 {
-    margin-top: 20px;
-  }
-  .text-block2 {
-    text-align:left ;
-  }
-
-  .knappar
-  {
-   display: flex; 
-    justify-content: center;
-    gap: 45px;
-  
-  }
-
-  a {
-    display: block;
-    background: dodgerblue;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    width: 150px;
+@media (max-width: 630px) {
+  h4 {
     text-align: center;
-    font-family: arial;
-    border-radius: 10px;
   }
 
-  a:hover {
-    background: darkblue;
+  .text-image-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 25px;
+    position: relative;
+    width: 100%;
+
   }
->>>>>>> origin/main
+
+  .caption {
+    text-align: center;
+  }
+
+  .text-block {
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 25px;
+    width: auto;
+
+  }
+}

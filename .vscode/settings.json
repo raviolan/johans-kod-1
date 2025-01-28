@@ -1,8 +1,6 @@
 {
-    "fiveServer.browser": [
-
-    ],
-    "liveServer.settings.port": 5501,
+    "fiveServer.browser": [],
+    "liveServer.settings.port": 5502,
     "liveServer.settings.NoBrowser": false,
     "liveServer.settings.CustomBrowser": "chrome"
 }
