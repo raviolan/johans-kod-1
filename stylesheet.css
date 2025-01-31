@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  text-wrap: wrap;
   width: 100%;
 }
 
