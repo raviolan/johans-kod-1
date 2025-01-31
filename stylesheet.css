@@ -228,13 +228,15 @@ a:hover {
   .ingress {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 
   .ingress-text {
+    max-width: 90%;
     text-align: center;
-    margin-bottom: 40px;
-
+    margin: 0 auto;
   }
 
   h4 {
