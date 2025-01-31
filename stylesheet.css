@@ -208,6 +208,11 @@ a:hover {
 
 
 @media (max-width: 630px) {
+
+  body {
+    padding: 10%;
+  }
+
   .toppen {
     height: auto;
     min-height: 300px;
